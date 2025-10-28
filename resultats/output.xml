@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-28T20:49:46.155993" rpa="false" schemaversion="5">
+<suite id="s1" name="Logout Tests" source="C:\Users\dell\PycharmProjects\RobotFramework-Atelier2\test_cases\logout_tests.robot">
+<test id="s1-t1" name="Test Case 4: Logout User" line="9">
+<kw name="Ouvrir Le Site Automation Exercise" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:49:46.567256" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${URL_HOME}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-28T20:49:46.566751" elapsed="4.858529"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-28T20:49:51.426443" elapsed="0.081942"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-10-28T20:49:51.509002" elapsed="0.000599"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>AutomationExercise</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-28T20:49:51.509912" elapsed="0.595501"/>
+</kw>
+<status status="PASS" start="2025-10-28T20:49:46.565142" elapsed="5.540701"/>
+</kw>
+<kw name="Vérifier Page D'Accueil Visible" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>AutomationExercise</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-28T20:49:52.108027" elapsed="0.541267"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:49:53.672488" level="INFO">Current page contains text 'AutomationExercise'.</msg>
+<arg>AutomationExercise</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-28T20:49:52.649535" elapsed="1.023380"/>
+</kw>
+<status status="PASS" start="2025-10-28T20:49:52.106969" elapsed="1.566329"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-10-28T20:49:53.674782" level="INFO">Étape 3: Page d'accueil visible</msg>
+<arg>Étape 3: Page d'accueil visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-10-28T20:49:53.674262" elapsed="0.000712"/>
+</kw>
+<kw name="Aller À La Page De Login" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:49:53.678642" level="INFO">Clicking element 'css:a[href="/login"]'.</msg>
+<arg>${SIGNUP_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T20:49:53.676962" elapsed="2.095036"/>
+</kw>
+<status status="PASS" start="2025-10-28T20:49:53.675878" elapsed="2.096857"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-10-28T20:49:55.774229" level="INFO">Étape 4: Bouton Signup/Login cliqué</msg>
+<arg>Étape 4: Bouton Signup/Login cliqué</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-10-28T20:49:55.773624" elapsed="0.000814"/>
+</kw>
+<kw name="Vérifier Login Page Visible" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Login to your account</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-28T20:49:55.775986" elapsed="0.537639"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:49:57.380927" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>Login to your account</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-28T20:49:56.315648" elapsed="1.065502"/>
+</kw>
+<status status="PASS" start="2025-10-28T20:49:55.775239" elapsed="1.606134"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-10-28T20:49:57.382344" level="INFO">Étape 5: Page de login vérifiée</msg>
+<arg>Étape 5: Page de login vérifiée</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-10-28T20:49:57.382011" elapsed="0.000474"/>
+</kw>
+<kw name="Se Connecter" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:49:57.384767" level="INFO">Typing text 'laaziri@gmail.com' into text field 'css:[data-qa="login-email"]'.</msg>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T20:49:57.384291" elapsed="1.743608"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:49:59.129610" level="INFO">Typing password into text field 'css:[data-qa="login-password"]'.</msg>
+<msg time="2025-10-28T20:50:00.218629" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T20:49:59.128574" elapsed="1.764542"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:50:00.893794" level="INFO">Clicking button 'css:[data-qa="login-button"]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-28T20:50:00.893413" elapsed="4.090209"/>
+</kw>
+<arg>${USER_EMAIL_LOGIN}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2025-10-28T20:49:57.383549" elapsed="7.600922"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-10-28T20:50:04.986190" level="INFO">Étape 6-7: Connexion effectuée</msg>
+<arg>Étape 6-7: Connexion effectuée</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-10-28T20:50:04.985636" elapsed="0.000801"/>
+</kw>
+<kw name="Vérifier Connexion Réussie" owner="keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-10-28T20:50:15.931040" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-28T20:50:15.931468" level="FAIL">Text 'AutomationExercise' did not appear in 10 seconds.</msg>
+<arg>AutomationExercise</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-10-28T20:50:04.988565" elapsed="10.948730">Text 'AutomationExercise' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>AutomationExercise</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-28T20:50:15.937544" elapsed="0.000046"/>
+</kw>
+<status status="FAIL" start="2025-10-28T20:50:04.987774" elapsed="10.949966">Text 'AutomationExercise' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Étape 8: Logged in as username vérifié</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-10-28T20:50:15.938256" elapsed="0.000075"/>
+</kw>
+<kw name="Cliquer Logout" owner="keywords">
+<status status="NOT RUN" start="2025-10-28T20:50:15.938767" elapsed="0.000042"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Étape 9: Bouton Logout cliqué</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-10-28T20:50:15.939031" elapsed="0.000043"/>
+</kw>
+<kw name="Vérifier Login Page Visible" owner="keywords">
+<status status="NOT RUN" start="2025-10-28T20:50:15.939367" elapsed="0.000042"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Étape 10: Navigation vers page login vérifiée</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-10-28T20:50:15.939581" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>TEST DE LOGOUT RÉUSSI!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-10-28T20:50:15.940054" elapsed="0.000055"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>test4_logout.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-10-28T20:50:15.940425" elapsed="0.000059"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-28T20:50:15.941450" elapsed="2.818702"/>
+</kw>
+<doc>Test de déconnexion utilisateur</doc>
+<tag>4</tag>
+<tag>logout</tag>
+<tag>smoke</tag>
+<status status="FAIL" start="2025-10-28T20:49:46.561923" elapsed="32.198839">Text 'AutomationExercise' did not appear in 10 seconds.</status>
+</test>
+<doc>Automatisation les cas de test avec Robotframework</doc>
+<status status="FAIL" start="2025-10-28T20:49:46.158467" elapsed="32.604663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">4</stat>
+<stat pass="0" fail="1" skip="0">logout</stat>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Logout Tests" id="s1" pass="0" fail="1" skip="0">Logout Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
