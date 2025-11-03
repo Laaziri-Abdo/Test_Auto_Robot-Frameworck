@@ -1,0 +1,16 @@
+--suite Tests.Products.Cart Tests
+--variable CALLER_ID:97302d11d99440c6b822a76ea35c33cc
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:2
+--variable PABOTLASTLEVEL:Tests.Products.Cart Tests
+--outputdir parallel_results\pabot_results\2
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests/

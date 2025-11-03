@@ -1,0 +1,56 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Products                                                                
+==============================================================================
+Tests.Products.Search Tests                                                   
+==============================================================================
+Search Existing Product :: Recherche d'un produit existant            | PASS |
+------------------------------------------------------------------------------
+Search Non Existing Product :: Recherche d'un produit qui n'existe...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot:16
+    T:  Search Non Existing Product    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot:21
+      Verify No Search Results    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\product_keywords.robot:29
+      Page Should Contain    ${SEARCH_ERROR_MSG}
+      |  ${SEARCH_ERROR_MSG} = Sorry, no products matched your search! (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot:16
+    T:  Search Non Existing Product    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot:6
+      Run Keywords    Take Screenshot On Failure    AND    Close Browser Session
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot:6
+      Take Screenshot On Failure    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\common_keywords.robot:23
+      Run Keyword If Test Failed    Capture Page Screenshot
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\common_keywords.robot:23
+      Capture Page Screenshot    
+______________________________________________________________________________
+| FAIL |
+ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+
+Also teardown failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D81DD6B790>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))
+------------------------------------------------------------------------------
+Tests.Products.Search Tests                                           | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests.Products                                                        | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\parallel_results\pabot_results\3\output.xml

@@ -1,0 +1,16 @@
+--suite Tests.Authentication.Registration Tests
+--variable CALLER_ID:2caf17e5eff84721b892ecd118c4955d
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Tests.Authentication
+--outputdir parallel_results\pabot_results\1
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests/

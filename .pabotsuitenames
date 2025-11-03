@@ -1,0 +1,9 @@
+datasources:6d45d8bc98f02417dfa6ba8ca2757efc1d3a9f42
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:147156f4d231afba3ea0ab27fbb550a8db887a4a
+--suite Tests.Authentication.Login Tests
+--suite Tests.Authentication.Registration Tests
+--suite Tests.Products.Cart Tests
+--suite Tests.Products.Search Tests
+--suite Tests.Smoke.Smoke Test Suite

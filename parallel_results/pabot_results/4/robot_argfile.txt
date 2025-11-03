@@ -1,0 +1,16 @@
+--suite Tests.Smoke.Smoke Test Suite
+--variable CALLER_ID:4666ed869fad4f28a6ffe8695fd08c12
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:1
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:4
+--variable PABOTLASTLEVEL:
+--outputdir parallel_results\pabot_results\4
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests/

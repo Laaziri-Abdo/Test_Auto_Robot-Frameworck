@@ -1,0 +1,152 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Products                                                                
+==============================================================================
+Tests.Products.Cart Tests                                                     
+==============================================================================
+Add Product To Cart :: Ajout d'un produit au panier depuis la page...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot:10
+    T:  Add Product To Cart    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot:13
+      Add Product To Cart From Homepage    ${PRODUCT_1}
+      |  ${PRODUCT_1} = Blue Top (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\product_keywords.robot:35
+      Wait And Click    xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]
+      |  xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')] = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\common_keywords.robot:30
+      Click Element    ${locator}
+      |  ${locator} = xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')] (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (626, 662). Other element would receive the click: <iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=5&amp;uci=a!5&amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIXdwf3T05ADFVVqHQkd8jEACw" data-load-complete="true"></iframe>
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+------------------------------------------------------------------------------
+Verify Product In Cart :: Vérification qu'un produit ajouté est da...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot:16
+    T:  Verify Product In Cart    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot:19
+      Add Product To Cart From Homepage    ${PRODUCT_1}
+      |  ${PRODUCT_1} = Blue Top (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\product_keywords.robot:35
+      Wait And Click    xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]
+      |  xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')] = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\common_keywords.robot:30
+      Click Element    ${locator}
+      |  ${locator} = xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')] (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (626, 662). Other element would receive the click: <iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=5&amp;uci=a!5&amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfI-IbU05ADFfEg6wQdoq8Rpw" data-load-complete="true"></iframe>
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+------------------------------------------------------------------------------
+Remove Product From Cart :: Suppression d'un produit du panier          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot:23
+    T:  Remove Product From Cart    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot:26
+      Add Product To Cart From Homepage    ${PRODUCT_1}
+      |  ${PRODUCT_1} = Blue Top (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\product_keywords.robot:35
+      Wait And Click    xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]
+      |  xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')] = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\common_keywords.robot:30
+      Click Element    ${locator}
+      |  ${locator} = xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')] (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (626, 662). Other element would receive the click: <iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=5&amp;uci=a!5&amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPLstozU05ADFcRKHQkdNNID6A" data-load-complete="true"></iframe>
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+------------------------------------------------------------------------------
+Tests.Products.Cart Tests                                             | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Tests.Products                                                        | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Tests                                                                 | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\parallel_results\pabot_results\2\output.xml

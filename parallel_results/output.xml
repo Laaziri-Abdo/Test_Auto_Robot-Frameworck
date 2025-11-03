@@ -1,0 +1,2851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.3.2 (Python 3.13.5 on win32)" generated="2025-11-02T15:19:55.915425" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests">
+<suite id="s1-s1" name="Authentication" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\authentication">
+<suite id="s1-s1-s1" name="Login Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\authentication\login_tests.robot">
+<test id="s1-s1-s1-t1" name="Login With Valid Credentials" line="9">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:38.900353" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:16:38.899771" elapsed="4.657224"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:16:43.557582" elapsed="8.982661"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.542199" elapsed="0.005028"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.547601" elapsed="0.035453"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:16:38.898128" elapsed="13.685258"/>
+</kw>
+<kw name="Go To Login Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.585999" elapsed="0.053066"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.639675" elapsed="0.071267"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:52.712077" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.711496" elapsed="2.973587"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:52.584890" elapsed="3.100628"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:55.768562" elapsed="1.140693"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:57.035742" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.909612" elapsed="0.126337"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:16:55.695891" elapsed="1.340257"/>
+</kw>
+<doc>Navigue vers la page de connexion</doc>
+<status status="PASS" start="2025-11-02T15:16:52.584047" elapsed="4.452252"/>
+</kw>
+<kw name="Login With Credentials" owner="authentication_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.049149" elapsed="0.213278"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:57.263608" level="INFO">Typing text 'abdolaaziri@example.com' into text field 'css:[data-qa='login-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.262929" elapsed="0.717229"/>
+</kw>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-02T15:16:57.044924" elapsed="0.935544"/>
+</kw>
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.981738" elapsed="0.048837"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.031752" level="INFO">Typing text '12345678' into text field 'css:[data-qa='login-password']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.031069" elapsed="0.317112"/>
+</kw>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-11-02T15:16:57.980853" elapsed="0.367569"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.349629" elapsed="0.048222"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.398304" elapsed="0.064542"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.464127" level="INFO">Clicking element 'css:[data-qa='login-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.463376" elapsed="0.203377"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:58.348784" elapsed="0.318676"/>
+</kw>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Effectue la connexion avec email et mot de passe</doc>
+<status status="PASS" start="2025-11-02T15:16:57.036741" elapsed="1.631028"/>
+</kw>
+<kw name="Verify Successful Login" owner="authentication_keywords">
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.677635" elapsed="2.649735"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.523625" level="INFO">Current page contains text 'Logged in as'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:01.328287" elapsed="1.196103"/>
+</kw>
+<arg>${LOGIN_SUCCESS_MSG}</arg>
+<status status="PASS" start="2025-11-02T15:16:58.672458" elapsed="3.852405"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.631000" level="INFO">Current page contains element 'css:[href='/logout']'.</msg>
+<arg>${LOGOUT_MENU}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.525322" elapsed="0.105905"/>
+</kw>
+<doc>Vérifie que la connexion est réussie</doc>
+<status status="PASS" start="2025-11-02T15:16:58.671226" elapsed="3.960435"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.645155" elapsed="0.001273"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:02.642571" elapsed="0.008855"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.656691" elapsed="4.987291"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:02.652912" elapsed="4.991678"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.636030" elapsed="5.008811"/>
+</kw>
+<doc>Test de connexion avec des identifiants valides</doc>
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2025-11-02T15:16:38.895964" elapsed="28.749102"/>
+</test>
+<test id="s1-s1-s1-t2" name="Logout After Login" line="16">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:07.650393" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.649446" elapsed="3.253120"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.903017" elapsed="6.257828"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.161400" elapsed="0.002444"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.164229" elapsed="0.051816"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:07.648576" elapsed="9.567718"/>
+</kw>
+<kw name="Go To Login Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.223863" elapsed="0.068003"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.292293" elapsed="0.066982"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:17.360351" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.359663" elapsed="2.004669"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:17.217421" elapsed="2.147334"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:19.377411" elapsed="0.420803"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:19.839907" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:19.798628" elapsed="0.041473"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:19.365414" elapsed="0.474867"/>
+</kw>
+<doc>Navigue vers la page de connexion</doc>
+<status status="PASS" start="2025-11-02T15:17:17.216726" elapsed="2.623713"/>
+</kw>
+<kw name="Login With Credentials" owner="authentication_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:19.842559" elapsed="0.137864"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:19.981735" level="INFO">Typing text 'abdolaaziri@example.com' into text field 'css:[data-qa='login-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:19.980863" elapsed="0.383564"/>
+</kw>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-02T15:17:19.841751" elapsed="0.523138"/>
+</kw>
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.366640" elapsed="0.037978"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.405700" level="INFO">Typing text '12345678' into text field 'css:[data-qa='login-password']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.404986" elapsed="0.256100"/>
+</kw>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-11-02T15:17:20.365610" elapsed="0.295783"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.662801" elapsed="0.062086"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.725239" elapsed="0.105554"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.835522" level="INFO">Clicking element 'css:[data-qa='login-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.831217" elapsed="5.909847"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:20.661820" elapsed="6.079615"/>
+</kw>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Effectue la connexion avec email et mot de passe</doc>
+<status status="PASS" start="2025-11-02T15:17:19.840851" elapsed="6.900840"/>
+</kw>
+<kw name="Verify Successful Login" owner="authentication_keywords">
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.746569" elapsed="0.034619"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:27.107936" level="INFO">Current page contains text 'Logged in as'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.781875" elapsed="0.326265"/>
+</kw>
+<arg>${LOGIN_SUCCESS_MSG}</arg>
+<status status="PASS" start="2025-11-02T15:17:26.743046" elapsed="0.365293"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:27.136420" level="INFO">Current page contains element 'css:[href='/logout']'.</msg>
+<arg>${LOGOUT_MENU}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.108647" elapsed="0.027972"/>
+</kw>
+<doc>Vérifie que la connexion est réussie</doc>
+<status status="PASS" start="2025-11-02T15:17:26.742229" elapsed="0.394603"/>
+</kw>
+<kw name="Logout User" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.138732" elapsed="0.035414"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.174551" elapsed="0.041452"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:27.216945" level="INFO">Clicking element 'css:[href='/logout']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.216362" elapsed="1.774931"/>
+</kw>
+<arg>${LOGOUT_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:27.137860" elapsed="1.853915"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:28.996915" elapsed="0.073496"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:29.180368" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:29.070835" elapsed="0.109656"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:28.995539" elapsed="0.185106"/>
+</kw>
+<doc>Déconnecte l'utilisateur</doc>
+<status status="PASS" start="2025-11-02T15:17:27.137162" elapsed="2.043608"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:29.182206" elapsed="0.000234"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:29.181497" elapsed="0.001117"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:29.183232" elapsed="2.234035"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:29.182820" elapsed="2.234704"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:29.181100" elapsed="2.236580"/>
+</kw>
+<doc>Test de déconnexion après connexion</doc>
+<tag>login</tag>
+<status status="PASS" start="2025-11-02T15:17:07.646783" elapsed="23.771057"/>
+</test>
+<test id="s1-s1-s1-t3" name="Login With Invalid Email" line="24">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:31.420253" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:31.419832" elapsed="3.777364"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:35.197720" elapsed="2.849913"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:38.048142" elapsed="0.018417"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:38.066897" elapsed="0.948254"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:31.419264" elapsed="7.596269"/>
+</kw>
+<kw name="Go To Login Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:39.017829" elapsed="0.114632"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:39.132904" elapsed="0.037318"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:39.171146" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:39.170619" elapsed="1.506110"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:39.016975" elapsed="1.659939"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:40.677610" elapsed="0.019393"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:40.711130" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:40.697207" elapsed="0.014035"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:40.677216" elapsed="0.034145"/>
+</kw>
+<doc>Navigue vers la page de connexion</doc>
+<status status="PASS" start="2025-11-02T15:17:39.016130" elapsed="1.695318"/>
+</kw>
+<kw name="Login With Credentials" owner="authentication_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:40.712587" elapsed="0.043942"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:40.757144" level="INFO">Typing text 'invalid-email' into text field 'css:[data-qa='login-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:40.756765" elapsed="0.437702"/>
+</kw>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-02T15:17:40.712145" elapsed="0.482544"/>
+</kw>
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.195724" elapsed="0.031663"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:41.229037" level="INFO">Typing text '12345678' into text field 'css:[data-qa='login-password']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.227963" elapsed="0.198008"/>
+</kw>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-11-02T15:17:41.195008" elapsed="0.231138"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.426898" elapsed="0.034329"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.461718" elapsed="0.075690"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:41.538026" level="INFO">Clicking element 'css:[data-qa='login-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.537639" elapsed="0.184512"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:41.426393" elapsed="0.296031"/>
+</kw>
+<arg>${INVALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Effectue la connexion avec email et mot de passe</doc>
+<status status="PASS" start="2025-11-02T15:17:40.711674" elapsed="1.010920"/>
+</kw>
+<kw name="Verify Login Failure" owner="authentication_keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:41.730535" level="FAIL">Variable '${LOGIN_ERROR_MSG}' not found. Did you mean:
+    ${LOGIN_ERROR_MSG_TEXT}</msg>
+<arg>${LOGIN_ERROR_MSG}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2025-11-02T15:17:41.723722" elapsed="0.007255">Variable '${LOGIN_ERROR_MSG}' not found. Did you mean:
+    ${LOGIN_ERROR_MSG_TEXT}</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${LOGIN_ERROR_MSG}</arg>
+<arg>${LOGIN_ERROR_MSG_TEXT}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:41.737320" elapsed="0.000199"/>
+</kw>
+<doc>Vérifie le message d'erreur de connexion</doc>
+<status status="FAIL" start="2025-11-02T15:17:41.723053" elapsed="0.015426">Variable '${LOGIN_ERROR_MSG}' not found. Did you mean:
+    ${LOGIN_ERROR_MSG_TEXT}</status>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:42.197771" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-0-selenium-screenshot-1.png"&gt;&lt;img src="20251102_151637-0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.740630" elapsed="0.458038"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.740397" elapsed="0.458667"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:41.739986" elapsed="0.459326"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:42.203527" elapsed="2.413977"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:42.200794" elapsed="2.417197"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:41.739474" elapsed="2.878699"/>
+</kw>
+<doc>Test de connexion avec email invalide</doc>
+<tag>login</tag>
+<tag>negative</tag>
+<status status="FAIL" start="2025-11-02T15:17:31.418447" elapsed="13.199880">Variable '${LOGIN_ERROR_MSG}' not found. Did you mean:
+    ${LOGIN_ERROR_MSG_TEXT}</status>
+</test>
+<status status="FAIL" start="2025-11-02T15:16:38.542000" elapsed="65.720000"/>
+</suite>
+<suite id="s1-s1-s2" name="Registration Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\authentication\registration_tests.robot">
+<test id="s1-s1-s2-t1" name="Register New User" line="9">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:38.881923" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:16:38.881388" elapsed="4.607791"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:16:43.490083" elapsed="8.412332"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:16:51.903374" elapsed="0.034926"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:51.942006" elapsed="0.073102"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:16:38.879575" elapsed="13.135967"/>
+</kw>
+<kw name="Generate Unique Email" owner="common_keywords">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2025-11-02T15:16:52.018469" level="INFO">${timestamp} = 1762093012</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.017821" elapsed="0.000757"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-11-02T15:16:52.019481" level="INFO">${unique_email} = newuser1762093012@example.com</msg>
+<var>${unique_email}</var>
+<arg>${NEW_USER_EMAIL_PREFIX}${timestamp}@example.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.018913" elapsed="0.000638"/>
+</kw>
+<return>
+<value>${unique_email}</value>
+<status status="PASS" start="2025-11-02T15:16:52.019729" elapsed="0.000309"/>
+</return>
+<msg time="2025-11-02T15:16:52.020388" level="INFO">${unique_email} = newuser1762093012@example.com</msg>
+<var>${unique_email}</var>
+<doc>Génère un email unique basé sur le timestamp</doc>
+<status status="PASS" start="2025-11-02T15:16:52.016946" elapsed="0.003507"/>
+</kw>
+<kw name="Go To Signup Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.023112" elapsed="0.703125"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.726719" elapsed="0.095043"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:52.822877" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.822227" elapsed="2.088111"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:52.022129" elapsed="2.888928"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:54.912854" elapsed="1.660492"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:56.631888" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.574248" elapsed="0.057835"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:16:54.911676" elapsed="1.720619"/>
+</kw>
+<doc>Navigue vers la page d'inscription</doc>
+<status status="PASS" start="2025-11-02T15:16:52.021139" elapsed="4.611472"/>
+</kw>
+<kw name="Fill Signup Form" owner="authentication_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.634755" elapsed="0.122914"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:56.758564" level="INFO">Typing text 'New Test User' into text field 'css:[data-qa='signup-name']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.758020" elapsed="0.755563"/>
+</kw>
+<arg>${SIGNUP_NAME_FIELD}</arg>
+<arg>${name}</arg>
+<status status="PASS" start="2025-11-02T15:16:56.633866" elapsed="0.880271"/>
+</kw>
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.515541" elapsed="0.208816"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:57.725372" level="INFO">Typing text 'newuser1762093012@example.com' into text field 'css:[data-qa='signup-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.724807" elapsed="0.467080"/>
+</kw>
+<arg>${SIGNUP_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-02T15:16:57.514579" elapsed="0.677525"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.193376" elapsed="0.033277"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.227075" elapsed="0.044751"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.272809" level="INFO">Clicking element 'css:[data-qa='signup-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.272226" elapsed="0.407492"/>
+</kw>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:58.192480" elapsed="0.487675"/>
+</kw>
+<arg>${NEW_USER_NAME}</arg>
+<arg>${unique_email}</arg>
+<doc>Remplit le formulaire d'inscription</doc>
+<status status="PASS" start="2025-11-02T15:16:56.633008" elapsed="2.047389"/>
+</kw>
+<kw name="Verify Signup Form Submitted" owner="authentication_keywords">
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.692054" elapsed="3.805903"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:03.059070" level="INFO">Current page contains text 'Enter Account Information'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.498880" elapsed="0.560374"/>
+</kw>
+<arg>${SIGNUP_SUCCESS_MSG}</arg>
+<status status="PASS" start="2025-11-02T15:16:58.690848" elapsed="4.368606"/>
+</kw>
+<doc>Vérifie que le formulaire d'inscription est soumis</doc>
+<status status="PASS" start="2025-11-02T15:16:58.680936" elapsed="4.378649"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:03.061798" elapsed="0.000383"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:03.061132" elapsed="0.001282"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:03.067065" elapsed="4.597847"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:03.062796" elapsed="4.602431"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:03.060279" elapsed="4.605118"/>
+</kw>
+<doc>Test d'inscription d'un nouvel utilisateur</doc>
+<tag>registration</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2025-11-02T15:16:38.877868" elapsed="28.787765"/>
+</test>
+<test id="s1-s1-s2-t2" name="Register With Existing Email" line="17">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:07.672195" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.671463" elapsed="9.072439"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:16.745955" elapsed="0.318601"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.065040" elapsed="0.002357"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.067841" elapsed="0.081606"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:07.669677" elapsed="9.480118"/>
+</kw>
+<kw name="Go To Signup Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.156690" elapsed="0.120885"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.277965" elapsed="0.068807"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:17.347775" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:17.347170" elapsed="2.584525"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:17.151053" elapsed="2.780983"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:19.936562" elapsed="0.044001"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.043754" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:19.980891" elapsed="0.063088"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:19.934654" elapsed="0.109575"/>
+</kw>
+<doc>Navigue vers la page d'inscription</doc>
+<status status="PASS" start="2025-11-02T15:17:17.150287" elapsed="2.894112"/>
+</kw>
+<kw name="Fill Signup Form" owner="authentication_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.046790" elapsed="0.098539"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.146920" level="INFO">Typing text 'New Test User' into text field 'css:[data-qa='signup-name']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.146039" elapsed="0.307483"/>
+</kw>
+<arg>${SIGNUP_NAME_FIELD}</arg>
+<arg>${name}</arg>
+<status status="PASS" start="2025-11-02T15:17:20.045837" elapsed="0.407979"/>
+</kw>
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.455388" elapsed="0.032102"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.488316" level="INFO">Typing text 'abdolaaziri@example.com' into text field 'css:[data-qa='signup-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.487880" elapsed="0.423470"/>
+</kw>
+<arg>${SIGNUP_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-02T15:17:20.454194" elapsed="0.457441"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.912893" elapsed="0.069568"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.985706" elapsed="0.105021"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:21.091783" level="INFO">Clicking element 'css:[data-qa='signup-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:21.091178" elapsed="3.748852"/>
+</kw>
+<arg>${SIGNUP_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:20.912083" elapsed="3.929396"/>
+</kw>
+<arg>${NEW_USER_NAME}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Remplit le formulaire d'inscription</doc>
+<status status="PASS" start="2025-11-02T15:17:20.044833" elapsed="4.797192"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:24.843713" elapsed="1.195104"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:26.085981" level="INFO">Current page contains text 'Email Address already exist!'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.039348" elapsed="0.046970"/>
+</kw>
+<arg>Email Address already exist!</arg>
+<status status="PASS" start="2025-11-02T15:17:24.842919" elapsed="1.243613"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.088609" elapsed="0.000302"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:26.087858" elapsed="0.001240"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.090062" elapsed="3.509263"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:26.089433" elapsed="3.510172"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.087074" elapsed="3.512755"/>
+</kw>
+<doc>Test d'inscription avec email existant</doc>
+<tag>negative</tag>
+<tag>registration</tag>
+<status status="PASS" start="2025-11-02T15:17:07.667714" elapsed="21.932251"/>
+</test>
+<status status="PASS" start="2025-11-02T15:16:38.537330" elapsed="51.065294"/>
+</suite>
+<status status="FAIL" start="2025-11-02T15:16:38.535000" elapsed="65.725000"/>
+</suite>
+<suite id="s1-s2" name="Products" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products">
+<suite id="s1-s2-s1" name="Cart Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\cart_tests.robot">
+<test id="s1-s2-s1-t1" name="Add Product To Cart" line="10">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:38.886714" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:16:38.886171" elapsed="11.402702"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:16:50.291019" elapsed="0.308235"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:16:50.601440" elapsed="0.004653"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:50.612053" elapsed="2.031284"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:16:38.884593" elapsed="13.759329"/>
+</kw>
+<kw name="Add Product To Cart From Homepage" owner="product_keywords">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:52.646974" level="INFO">Simulating Mouse Over on element 'xpath://p[contains(text(), 'Blue Top')]/..'.</msg>
+<arg>xpath://p[contains(text(), '${product_name}')]/..</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.646200" elapsed="0.320351"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.967831" elapsed="0.130066"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:53.098262" elapsed="0.351084"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:53.451303" level="INFO">Clicking element 'xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')]'.</msg>
+<msg time="2025-11-02T15:16:56.312010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-2-selenium-screenshot-1.png"&gt;&lt;img src="20251102_151637-2-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-02T15:16:56.470583" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIXdwf3T05ADFVVqHQkd8jEACw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-02T15:16:53.450097" elapsed="3.216944">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIXdwf3T05ADFVVqHQkd8jEACw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<arg>xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="FAIL" start="2025-11-02T15:16:52.966998" elapsed="3.733903">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIXdwf3T05ADFVVqHQkd8jEACw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${PRODUCT_ADDED_MSG}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-11-02T15:16:56.701541" elapsed="0.001281"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Ajoute un produit spécifique au panier depuis l'accueil</doc>
+<status status="FAIL" start="2025-11-02T15:16:52.644858" elapsed="4.058401">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIXdwf3T05ADFVVqHQkd8jEACw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<kw name="Continue Shopping" owner="product_keywords">
+<doc>Continue les achats après ajout au panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:16:56.703757" elapsed="0.000171"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:57.163323" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-2-selenium-screenshot-2.png"&gt;&lt;img src="20251102_151637-2-selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.755781" elapsed="0.407786"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.744876" elapsed="0.418916"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:16:56.715383" elapsed="0.448635"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.165108" elapsed="4.720596"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:16:57.164385" elapsed="4.721696"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:16:56.712455" elapsed="5.173802"/>
+</kw>
+<doc>Ajout d'un produit au panier depuis la page d'accueil</doc>
+<tag>cart</tag>
+<tag>smoke</tag>
+<status status="FAIL" start="2025-11-02T15:16:38.882984" elapsed="23.003466">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIXdwf3T05ADFVVqHQkd8jEACw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</test>
+<test id="s1-s2-s1-t2" name="Verify Product In Cart" line="16">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:01.911173" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:01.906377" elapsed="5.657991"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.564843" elapsed="0.072708"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.638149" elapsed="0.007455"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.645964" elapsed="0.038844"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:01.896551" elapsed="5.788545"/>
+</kw>
+<kw name="Add Product To Cart From Homepage" owner="product_keywords">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:07.686866" level="INFO">Simulating Mouse Over on element 'xpath://p[contains(text(), 'Blue Top')]/..'.</msg>
+<arg>xpath://p[contains(text(), '${product_name}')]/..</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.686394" elapsed="0.411076"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:08.098526" elapsed="0.028231"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:08.127118" elapsed="0.033080"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:08.161272" level="INFO">Clicking element 'xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')]'.</msg>
+<msg time="2025-11-02T15:17:10.269768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-2-selenium-screenshot-3.png"&gt;&lt;img src="20251102_151637-2-selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-02T15:17:10.270167" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfI-IbU05ADFfEg6wQdoq8Rpw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-02T15:17:08.160605" elapsed="2.112722">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfI-IbU05ADFfEg6wQdoq8Rpw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<arg>xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="FAIL" start="2025-11-02T15:17:08.097882" elapsed="2.182106">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfI-IbU05ADFfEg6wQdoq8Rpw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${PRODUCT_ADDED_MSG}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:10.280712" elapsed="0.000206"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Ajoute un produit spécifique au panier depuis l'accueil</doc>
+<status status="FAIL" start="2025-11-02T15:17:07.685612" elapsed="2.595745">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfI-IbU05ADFfEg6wQdoq8Rpw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<kw name="Go To Cart Page" owner="cart_keywords">
+<doc>Navigue vers la page panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:10.281808" elapsed="0.000192"/>
+</kw>
+<kw name="Verify Product In Cart" owner="cart_keywords">
+<arg>${PRODUCT_1}</arg>
+<doc>Vérifie qu'un produit est dans le panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:10.282368" elapsed="0.000132"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:10.577873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-2-selenium-screenshot-4.png"&gt;&lt;img src="20251102_151637-2-selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.284862" elapsed="0.293678"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.284286" elapsed="0.294425"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:10.283533" elapsed="0.295355"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.579944" elapsed="2.650432"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:10.579273" elapsed="2.651406"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.283098" elapsed="2.947755"/>
+</kw>
+<doc>Vérification qu'un produit ajouté est dans le panier</doc>
+<tag>cart</tag>
+<status status="FAIL" start="2025-11-02T15:17:01.891416" elapsed="11.339607">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfI-IbU05ADFfEg6wQdoq8Rpw" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</test>
+<test id="s1-s2-s1-t3" name="Remove Product From Cart" line="23">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:13.235510" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:13.234268" elapsed="8.081655"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:21.318206" elapsed="0.094604"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:21.413173" elapsed="0.013560"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:21.427152" elapsed="0.088958"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:13.232876" elapsed="8.293754"/>
+</kw>
+<kw name="Add Product To Cart From Homepage" owner="product_keywords">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:21.540269" level="INFO">Simulating Mouse Over on element 'xpath://p[contains(text(), 'Blue Top')]/..'.</msg>
+<arg>xpath://p[contains(text(), '${product_name}')]/..</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:21.538747" elapsed="0.668516"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:22.210133" elapsed="0.083756"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:22.294369" elapsed="0.152763"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:22.449499" level="INFO">Clicking element 'xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')]'.</msg>
+<msg time="2025-11-02T15:17:24.521425" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-2-selenium-screenshot-5.png"&gt;&lt;img src="20251102_151637-2-selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-02T15:17:24.522423" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPLstozU05ADFcRKHQkdNNID6A" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-02T15:17:22.447874" elapsed="2.077439">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPLstozU05ADFcRKHQkdNNID6A" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<arg>xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="FAIL" start="2025-11-02T15:17:22.208042" elapsed="2.328974">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPLstozU05ADFcRKHQkdNNID6A" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${PRODUCT_ADDED_MSG}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:24.539649" elapsed="0.000318"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Ajoute un produit spécifique au panier depuis l'accueil</doc>
+<status status="FAIL" start="2025-11-02T15:17:21.533840" elapsed="3.006723">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPLstozU05ADFcRKHQkdNNID6A" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</kw>
+<kw name="Go To Cart Page" owner="cart_keywords">
+<doc>Navigue vers la page panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:24.541231" elapsed="0.000168"/>
+</kw>
+<kw name="Remove Product From Cart" owner="cart_keywords">
+<doc>Supprime un produit du panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:24.541928" elapsed="0.000155"/>
+</kw>
+<kw name="Verify Cart Is Empty" owner="cart_keywords">
+<doc>Vérifie que le panier est vide</doc>
+<status status="NOT RUN" start="2025-11-02T15:17:24.542538" elapsed="0.000133"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:25.124162" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-2-selenium-screenshot-6.png"&gt;&lt;img src="20251102_151637-2-selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T15:17:24.593835" elapsed="0.530649"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:24.544523" elapsed="0.580242"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:24.543773" elapsed="0.581165"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:25.126418" elapsed="5.406308"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:25.125634" elapsed="5.407825"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:24.543271" elapsed="5.990339"/>
+</kw>
+<doc>Suppression d'un produit du panier</doc>
+<tag>cart</tag>
+<status status="FAIL" start="2025-11-02T15:17:13.231897" elapsed="17.301884">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;iframe id="aswift_4" name="aswift_4" browsingtopics="true" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 320px !important; height: 50px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="320" height="50" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251029/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2" data-google-container-id="a!5" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPLstozU05ADFcRKHQkdNNID6A" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]</status>
+</test>
+<status status="FAIL" start="2025-11-02T15:16:38.547828" elapsed="51.993889"/>
+</suite>
+<suite id="s1-s2-s2" name="Search Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot">
+<test id="s1-s2-s2-t1" name="Search Existing Product" line="9">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:38.893112" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:16:38.892508" elapsed="13.162650"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.057183" elapsed="0.231795"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.289426" elapsed="0.006069"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.296898" elapsed="0.055576"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:16:38.890534" elapsed="13.462285"/>
+</kw>
+<kw name="Go To Products Page" owner="product_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.355189" elapsed="0.178839"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.534379" elapsed="0.365015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:52.900405" level="INFO">Clicking element 'css:[href='/products']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.899752" elapsed="4.929068"/>
+</kw>
+<arg>${PRODUCTS_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:52.354237" elapsed="5.474921"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.830520" elapsed="0.062806"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.144218" level="INFO">Current page contains text 'All Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.893754" elapsed="0.250985"/>
+</kw>
+<arg>All Products</arg>
+<status status="PASS" start="2025-11-02T15:16:57.829660" elapsed="0.315470"/>
+</kw>
+<doc>Navigue vers la page produits</doc>
+<status status="PASS" start="2025-11-02T15:16:52.353379" elapsed="5.791973"/>
+</kw>
+<kw name="Search Product" owner="product_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.159091" elapsed="0.062104"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.222097" level="INFO">Typing text 'Blue Top' into text field 'css:#search_product'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.221550" elapsed="0.301282"/>
+</kw>
+<arg>${SEARCH_FIELD}</arg>
+<arg>${product_name}</arg>
+<status status="PASS" start="2025-11-02T15:16:58.148905" elapsed="0.374168"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.524393" elapsed="0.066542"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.591340" elapsed="0.052055"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.644310" level="INFO">Clicking element 'css:#submit_search'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.643769" elapsed="1.810214"/>
+</kw>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:58.523460" elapsed="1.931174"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:00.476684" elapsed="2.137850"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.645527" level="INFO">Current page contains text 'Searched Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.615585" elapsed="0.030660"/>
+</kw>
+<arg>Searched Products</arg>
+<status status="PASS" start="2025-11-02T15:17:00.455748" elapsed="2.191696"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Recherche un produit par nom</doc>
+<status status="PASS" start="2025-11-02T15:16:58.146159" elapsed="4.501796"/>
+</kw>
+<kw name="Verify Product Search Results" owner="product_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.744767" level="INFO">Current page contains text 'Blue Top'.</msg>
+<arg>${expected_product}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.657013" elapsed="0.087989"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.778920" level="INFO">${product_count} = 1</msg>
+<var>${product_count}</var>
+<arg>${PRODUCT_CARD}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.745449" elapsed="0.033583"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${product_count} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.779452" elapsed="0.006399"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Vérifie que le produit recherché est affiché</doc>
+<status status="PASS" start="2025-11-02T15:17:02.648626" elapsed="0.137887"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.857498" elapsed="0.000412"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:02.854677" elapsed="0.003827"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.861140" elapsed="4.714681"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:02.858911" elapsed="4.717401"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.826170" elapsed="4.750333"/>
+</kw>
+<doc>Recherche d'un produit existant</doc>
+<tag>search</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2025-11-02T15:16:38.888881" elapsed="28.687827"/>
+</test>
+<test id="s1-s2-s2-t2" name="Search Non Existing Product" line="16">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:07.583323" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.582090" elapsed="3.352713"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.935288" elapsed="9.759986"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.695859" elapsed="0.013133"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.709483" elapsed="0.032448"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:07.580908" elapsed="13.161294"/>
+</kw>
+<kw name="Go To Products Page" owner="product_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.743975" elapsed="0.101103"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.845526" elapsed="0.144991"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.991552" level="INFO">Clicking element 'css:[href='/products']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.990969" elapsed="5.252519"/>
+</kw>
+<arg>${PRODUCTS_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:20.743292" elapsed="5.502728"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.256804" elapsed="0.090127"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:26.439366" level="INFO">Current page contains text 'All Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.352588" elapsed="0.087037"/>
+</kw>
+<arg>All Products</arg>
+<status status="PASS" start="2025-11-02T15:17:26.253832" elapsed="0.185979"/>
+</kw>
+<doc>Navigue vers la page produits</doc>
+<status status="PASS" start="2025-11-02T15:17:20.742636" elapsed="5.697331"/>
+</kw>
+<kw name="Search Product" owner="product_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.442271" elapsed="0.046620"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:26.489924" level="INFO">Typing text 'NonExistingProduct123' into text field 'css:#search_product'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.489290" elapsed="0.461304"/>
+</kw>
+<arg>${SEARCH_FIELD}</arg>
+<arg>${product_name}</arg>
+<status status="PASS" start="2025-11-02T15:17:26.441321" elapsed="0.509547"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.952314" elapsed="0.083781"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.036526" elapsed="0.040938"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:27.080218" level="INFO">Clicking element 'css:#submit_search'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.079266" elapsed="0.973275"/>
+</kw>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:26.951313" elapsed="1.101534"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:28.054226" elapsed="0.048321"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:28.266616" level="INFO">Current page contains text 'Searched Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:28.102918" elapsed="0.163863"/>
+</kw>
+<arg>Searched Products</arg>
+<status status="PASS" start="2025-11-02T15:17:28.053197" elapsed="0.213782"/>
+</kw>
+<arg>NonExistingProduct123</arg>
+<doc>Recherche un produit par nom</doc>
+<status status="PASS" start="2025-11-02T15:17:26.440384" elapsed="1.826725"/>
+</kw>
+<kw name="Verify No Search Results" owner="product_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:54.075309" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD9EC10&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:18:58.172659" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE71940&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:02.235751" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE72190&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:06.311994" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEA8170&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:06.318664" level="FAIL">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</msg>
+<arg>${SEARCH_ERROR_MSG}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-11-02T15:17:28.268021" elapsed="98.222627">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</status>
+</kw>
+<doc>Vérifie qu'aucun résultat n'est trouvé</doc>
+<status status="FAIL" start="2025-11-02T15:17:28.267428" elapsed="98.224066">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</status>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:19:10.575182" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B350&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:14.669652" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6BAC0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:18.750004" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B130&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:26.882540" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB49E0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:30.937517" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4050&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:35.036889" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4270&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:39.107797" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4490&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:39.108312" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.493685" elapsed="32.622123">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.493416" elapsed="32.622695">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.493027" elapsed="32.623277">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:19:43.177304" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB5480&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:47.269668" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB56A0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:51.352151" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB58C0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:19:39.116959" elapsed="16.344992"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:19:39.116583" elapsed="16.345752"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.492507" elapsed="48.970292">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<doc>Recherche d'un produit qui n'existe pas</doc>
+<tag>negative</tag>
+<tag>search</tag>
+<status status="FAIL" start="2025-11-02T15:17:07.578639" elapsed="167.884824">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+
+Also teardown failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</test>
+<status status="FAIL" start="2025-11-02T15:16:38.537261" elapsed="196.933085"/>
+</suite>
+<status status="FAIL" start="2025-11-02T15:16:38.534000" elapsed="248.939000"/>
+</suite>
+<suite id="s1-s3" name="Smoke" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\smoke">
+<suite id="s1-s3-s1" name="Smoke Test Suite" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\smoke\smoke_test_suite.robot">
+<test id="s1-s3-s1-t1" name="Smoke Test - Navigation And Pages" line="12">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:31.495711" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:31.494744" elapsed="11.577865"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.073285" elapsed="0.074252"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.148056" elapsed="0.004879"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.153479" elapsed="0.025902"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:31.493535" elapsed="11.686035"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:43.194774" level="INFO">Current page contains element 'css:.logo'.</msg>
+<arg>${HEADER_LOGO}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.180050" elapsed="0.015042"/>
+</kw>
+<kw name="Go To Products Page" owner="product_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.198853" elapsed="0.040213"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.239312" elapsed="0.034888"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:43.274852" level="INFO">Clicking element 'css:[href='/products']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:43.274467" elapsed="2.929077"/>
+</kw>
+<arg>${PRODUCTS_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:43.197736" elapsed="3.006026"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.204642" elapsed="0.014195"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:46.229108" level="INFO">Current page contains text 'All Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.219087" elapsed="0.010122"/>
+</kw>
+<arg>All Products</arg>
+<status status="PASS" start="2025-11-02T15:17:46.204088" elapsed="0.025232"/>
+</kw>
+<doc>Navigue vers la page produits</doc>
+<status status="PASS" start="2025-11-02T15:17:43.195670" elapsed="3.033721"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.230253" elapsed="0.009042"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:46.248737" level="INFO">Current page contains text 'All Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.239525" elapsed="0.009312"/>
+</kw>
+<arg>All Products</arg>
+<status status="PASS" start="2025-11-02T15:17:46.229607" elapsed="0.019335"/>
+</kw>
+<kw name="Search Product" owner="product_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.249927" elapsed="0.053988"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:46.305099" level="INFO">Typing text 'Blue Top' into text field 'css:#search_product'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.304362" elapsed="0.130394"/>
+</kw>
+<arg>${SEARCH_FIELD}</arg>
+<arg>${product_name}</arg>
+<status status="PASS" start="2025-11-02T15:17:46.249550" elapsed="0.185487"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.435955" elapsed="0.027673"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.463866" elapsed="0.025360"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:46.491016" level="INFO">Clicking element 'css:#submit_search'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:46.489671" elapsed="1.041184"/>
+</kw>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:46.435381" elapsed="1.095701"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.532031" elapsed="0.030378"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:47.573276" level="INFO">Current page contains text 'Searched Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.562644" elapsed="0.010746"/>
+</kw>
+<arg>Searched Products</arg>
+<status status="PASS" start="2025-11-02T15:17:47.531408" elapsed="0.042090"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Recherche un produit par nom</doc>
+<status status="PASS" start="2025-11-02T15:17:46.249145" elapsed="1.324431"/>
+</kw>
+<kw name="Verify Product Search Results" owner="product_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:47.791149" level="INFO">Current page contains text 'Blue Top'.</msg>
+<arg>${expected_product}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.574192" elapsed="0.217238"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:47.841165" level="INFO">${product_count} = 1</msg>
+<var>${product_count}</var>
+<arg>${PRODUCT_CARD}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.792414" elapsed="0.048806"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${product_count} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.841420" elapsed="0.000332"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Vérifie que le produit recherché est affiché</doc>
+<status status="PASS" start="2025-11-02T15:17:47.573782" elapsed="0.268070"/>
+</kw>
+<kw name="Go To Cart Page" owner="cart_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.842767" elapsed="0.034408"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.877725" elapsed="0.104094"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:47.982605" level="INFO">Clicking element 'css:[href='/view_cart']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:47.982158" elapsed="0.975821"/>
+</kw>
+<arg>${CART_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:47.842377" elapsed="1.115760"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:48.959065" elapsed="0.018641"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:49.015716" level="INFO">Current page contains text 'Shopping Cart'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:48.977956" elapsed="0.037930"/>
+</kw>
+<arg>Shopping Cart</arg>
+<status status="PASS" start="2025-11-02T15:17:48.958411" elapsed="0.057644"/>
+</kw>
+<doc>Navigue vers la page panier</doc>
+<status status="PASS" start="2025-11-02T15:17:47.842041" elapsed="1.174097"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:49.016768" elapsed="0.007500"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:49.060394" level="INFO">Current page contains text 'Shopping Cart'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:49.024539" elapsed="0.035995"/>
+</kw>
+<arg>Shopping Cart</arg>
+<status status="PASS" start="2025-11-02T15:17:49.016358" elapsed="0.044305"/>
+</kw>
+<kw name="Go To Login Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:49.061816" elapsed="0.016469"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:49.078545" elapsed="0.018756"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:49.097818" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:49.097537" elapsed="1.525536"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:49.061382" elapsed="1.562107"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.625165" elapsed="0.022891"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:50.661889" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.648272" elapsed="0.013816"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:50.624276" elapsed="0.038005"/>
+</kw>
+<doc>Navigue vers la page de connexion</doc>
+<status status="PASS" start="2025-11-02T15:17:49.060910" elapsed="1.601504"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.663172" elapsed="0.008062"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:50.783465" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.671482" elapsed="0.112157"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:50.662717" elapsed="0.121216"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.785296" elapsed="0.000220"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:50.784891" elapsed="0.000780"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.786319" elapsed="2.250850"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:50.785903" elapsed="2.251437"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:50.784420" elapsed="2.253007"/>
+</kw>
+<doc>Test smoke de navigation et pages principales</doc>
+<tag>smoke</tag>
+<status status="PASS" start="2025-11-02T15:17:31.492057" elapsed="21.545462"/>
+</test>
+<test id="s1-s3-s1-t2" name="Smoke Test - User Functionality" line="34">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:53.039249" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:53.038953" elapsed="5.142412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:58.182107" elapsed="0.074567"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:58.257245" elapsed="0.002900"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:58.260586" elapsed="0.030323"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:53.038492" elapsed="5.252757"/>
+</kw>
+<kw name="Go To Login Page" owner="authentication_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:58.294708" elapsed="0.083083"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:58.378241" elapsed="0.069997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:58.449030" level="INFO">Clicking element 'css:[href='/login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:58.448568" elapsed="0.980747"/>
+</kw>
+<arg>${LOGIN_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:58.293677" elapsed="1.135930"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.430741" elapsed="0.028090"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:59.473207" level="INFO">Current page contains text 'Login to your account'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.459046" elapsed="0.014318"/>
+</kw>
+<arg>Login to your account</arg>
+<status status="PASS" start="2025-11-02T15:17:59.429998" elapsed="0.043551"/>
+</kw>
+<doc>Navigue vers la page de connexion</doc>
+<status status="PASS" start="2025-11-02T15:17:58.291896" elapsed="1.181788"/>
+</kw>
+<kw name="Login With Credentials" owner="authentication_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.475335" elapsed="0.186680"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:59.662961" level="INFO">Typing text 'abdolaaziri@example.com' into text field 'css:[data-qa='login-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.662371" elapsed="0.200317"/>
+</kw>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2025-11-02T15:17:59.474693" elapsed="0.388172"/>
+</kw>
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.863548" elapsed="0.017571"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:59.881643" level="INFO">Typing text '12345678' into text field 'css:[data-qa='login-password']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.881317" elapsed="0.091176"/>
+</kw>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-11-02T15:17:59.863050" elapsed="0.109599"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.973292" elapsed="0.018533"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:59.992203" elapsed="0.020342"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:00.013068" level="INFO">Clicking element 'css:[data-qa='login-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:18:00.012768" elapsed="3.741582"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:59.972853" elapsed="3.781688"/>
+</kw>
+<arg>${VALID_EMAIL}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Effectue la connexion avec email et mot de passe</doc>
+<status status="PASS" start="2025-11-02T15:17:59.474011" elapsed="4.280657"/>
+</kw>
+<kw name="Verify Successful Login" owner="authentication_keywords">
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:18:03.756119" elapsed="0.016298"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:03.787838" level="INFO">Current page contains text 'Logged in as'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:18:03.772646" elapsed="0.015286"/>
+</kw>
+<arg>${LOGIN_SUCCESS_MSG}</arg>
+<status status="PASS" start="2025-11-02T15:18:03.755517" elapsed="0.032519"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:03.800189" level="INFO">Current page contains element 'css:[href='/logout']'.</msg>
+<arg>${LOGOUT_MENU}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:18:03.788222" elapsed="0.012064"/>
+</kw>
+<doc>Vérifie que la connexion est réussie</doc>
+<status status="PASS" start="2025-11-02T15:18:03.754987" elapsed="0.045405"/>
+</kw>
+<kw name="Add Product To Cart From Homepage" owner="product_keywords">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:03.801329" level="INFO">Simulating Mouse Over on element 'xpath://p[contains(text(), 'Blue Top')]/..'.</msg>
+<arg>xpath://p[contains(text(), '${product_name}')]/..</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:18:03.801055" elapsed="0.329307"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:18:04.132917" elapsed="0.024857"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:18:04.157989" elapsed="0.020453"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:04.178996" level="INFO">Clicking element 'xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')]'.</msg>
+<msg time="2025-11-02T15:18:05.521050" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-4-selenium-screenshot-1.png"&gt;&lt;img src="20251102_151637-4-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-02T15:18:05.521294" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-02T15:18:04.178707" elapsed="1.352745">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</status>
+</kw>
+<arg>xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="FAIL" start="2025-11-02T15:18:04.131877" elapsed="1.401815">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${PRODUCT_ADDED_MSG}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-11-02T15:18:05.533918" elapsed="0.000083"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Ajoute un produit spécifique au panier depuis l'accueil</doc>
+<status status="FAIL" start="2025-11-02T15:18:03.800593" elapsed="1.733544">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</status>
+</kw>
+<kw name="Continue Shopping" owner="product_keywords">
+<doc>Continue les achats après ajout au panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:18:05.534340" elapsed="0.000072"/>
+</kw>
+<kw name="Go To Cart Page" owner="cart_keywords">
+<doc>Navigue vers la page panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:18:05.534562" elapsed="0.000060"/>
+</kw>
+<kw name="Verify Product In Cart" owner="cart_keywords">
+<arg>${PRODUCT_1}</arg>
+<doc>Vérifie qu'un produit est dans le panier</doc>
+<status status="NOT RUN" start="2025-11-02T15:18:05.534774" elapsed="0.000073"/>
+</kw>
+<kw name="Logout User" owner="authentication_keywords">
+<doc>Déconnecte l'utilisateur</doc>
+<status status="NOT RUN" start="2025-11-02T15:18:05.534998" elapsed="0.000068"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:05.767217" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="20251102_151637-4-selenium-screenshot-2.png"&gt;&lt;img src="20251102_151637-4-selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-02T15:18:05.536217" elapsed="0.231264"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:18:05.536007" elapsed="0.231718"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:18:05.535698" elapsed="0.232182"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:18:05.768832" elapsed="2.200600"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:18:05.768232" elapsed="2.201357"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:18:05.535455" elapsed="2.434226"/>
+</kw>
+<doc>Test smoke des fonctionnalités utilisateur</doc>
+<tag>smoke</tag>
+<status status="FAIL" start="2025-11-02T15:17:53.037927" elapsed="14.931836">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt; is not clickable at point (626, 662). Other element would receive the click: &lt;a data-product-id="1" class="btn btn-default add-to-cart"&gt;...&lt;/a&gt;
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-11-02T15:17:31.079621" elapsed="36.890722"/>
+</suite>
+<status status="FAIL" start="2025-11-02T15:17:31.077819" elapsed="36.893186"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 5 executions.</doc>
+<status status="FAIL" start="2025-11-02T15:16:38.515000" elapsed="196.963000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">cart</stat>
+<stat pass="2" fail="1" skip="0">login</stat>
+<stat pass="1" fail="2" skip="0">negative</stat>
+<stat pass="2" fail="0" skip="0">registration</stat>
+<stat pass="1" fail="1" skip="0">search</stat>
+<stat pass="4" fail="2" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="6" fail="6" skip="0">Tests</stat>
+<stat name="Authentication" id="s1-s1" pass="4" fail="1" skip="0">Tests.Authentication</stat>
+<stat name="Login Tests" id="s1-s1-s1" pass="2" fail="1" skip="0">Tests.Authentication.Login Tests</stat>
+<stat name="Registration Tests" id="s1-s1-s2" pass="2" fail="0" skip="0">Tests.Authentication.Registration Tests</stat>
+<stat name="Products" id="s1-s2" pass="1" fail="4" skip="0">Tests.Products</stat>
+<stat name="Cart Tests" id="s1-s2-s1" pass="0" fail="3" skip="0">Tests.Products.Cart Tests</stat>
+<stat name="Search Tests" id="s1-s2-s2" pass="1" fail="1" skip="0">Tests.Products.Search Tests</stat>
+<stat name="Smoke" id="s1-s3" pass="1" fail="1" skip="0">Tests.Smoke</stat>
+<stat name="Smoke Test Suite" id="s1-s3-s1" pass="1" fail="1" skip="0">Tests.Smoke.Smoke Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-02T15:18:54.075309" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD9EC10&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:18:58.172659" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE71940&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:02.235751" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE72190&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:06.311994" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEA8170&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:10.575182" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B350&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:14.669652" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6BAC0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:18.750004" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B130&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:26.882540" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB49E0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:30.937517" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4050&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:35.036889" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4270&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:39.107797" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4490&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:43.177304" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB5480&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:47.269668" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB56A0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:51.352151" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB58C0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+</errors>
+</robot>

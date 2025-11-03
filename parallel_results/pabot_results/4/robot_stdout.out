@@ -1,0 +1,67 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Smoke                                                                   
+==============================================================================
+Tests.Smoke.Smoke Test Suite                                                  
+==============================================================================
+Smoke Test - Navigation And Pages :: Test smoke de navigation et p... | PASS |
+------------------------------------------------------------------------------
+Smoke Test - User Functionality :: Test smoke des fonctionnalités ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\smoke\smoke_test_suite.robot:34
+    T:  Smoke Test - User Functionality    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\smoke\smoke_test_suite.robot:43
+      Add Product To Cart From Homepage    ${PRODUCT_1}
+      |  ${PRODUCT_1} = Blue Top (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\product_keywords.robot:35
+      Wait And Click    xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')]
+      |  xpath://p[contains(text(), '${product_name}')]/..//a[contains(@class, 'add-to-cart')] = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\common_keywords.robot:30
+      Click Element    ${locator}
+      |  ${locator} = xpath://p[contains(text(), 'Blue Top')]/..//a[contains(@class, 'add-to-cart')] (str)
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <a data-product-id="1" class="btn btn-default add-to-cart">...</a> is not clickable at point (626, 662). Other element would receive the click: <a data-product-id="1" class="btn btn-default add-to-cart">...</a>
+  (Session info: chrome=141.0.7390.123); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff626aee8e5+80021]
+	GetHandleVerifier [0x0x7ff626aee940+80112]
+	(No symbol) [0x0x7ff62687060f]
+	(No symbol) [0x0x7ff6268d0a39]
+	(No symbol) [0x0x7ff6268ce3be]
+	(No symbol) [0x0x7ff6268cb2e1]
+	(No symbol) [0x0x7ff6268ca1a0]
+	(No symbol) [0x0x7ff6268bb7c8]
+	(No symbol) [0x0x7ff6268f122a]
+	(No symbol) [0x0x7ff6268bb056]
+	(No symbol) [0x0x7ff6268f1440]
+	(No symbol) [0x0x7ff62691968a]
+	(No symbol) [0x0x7ff6268f1003]
+	(No symbol) [0x0x7ff6268b95d1]
+	(No symbol) [0x0x7ff6268ba3f3]
+	GetHandleVerifier [0x0x7ff626dadc7d+2960429]
+	GetHandleVerifier [0x0x7ff626da7f3a+2936554]
+	GetHandleVerifier [0x0x7ff626dc8977+3070247]
+	GetHandleVerifier [0x0x7ff626b083ce+185214]
+	GetHandleVerifier [0x0x7ff626b0fe1f+216527]
+	GetHandleVerifier [0x0x7ff626af7b24+117460]
+	GetHandleVerifier [0x0x7ff626af7cdf+117903]
+	GetHandleVerifier [0x0x7ff626addbb8+11112]
+	BaseThreadInitThunk [0x0x7ffed680e8d7+23]
+	RtlUserThreadStart [0x0x7ffed88ec53c+44]
+------------------------------------------------------------------------------
+Tests.Smoke.Smoke Test Suite                                          | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests.Smoke                                                           | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\parallel_results\pabot_results\4\output.xml

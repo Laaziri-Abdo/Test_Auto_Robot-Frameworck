@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-11-02T15:16:38.488057" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests">
+<suite id="s1-s1" name="Products" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products">
+<suite id="s1-s1-s1" name="Search Tests" source="C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\products\search_tests.robot">
+<test id="s1-s1-s1-t1" name="Search Existing Product" line="9">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:38.893112" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:16:38.892508" elapsed="13.162650"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.057183" elapsed="0.231795"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.289426" elapsed="0.006069"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.296898" elapsed="0.055576"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:16:38.890534" elapsed="13.462285"/>
+</kw>
+<kw name="Go To Products Page" owner="product_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.355189" elapsed="0.178839"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.534379" elapsed="0.365015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:52.900405" level="INFO">Clicking element 'css:[href='/products']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:52.899752" elapsed="4.929068"/>
+</kw>
+<arg>${PRODUCTS_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:52.354237" elapsed="5.474921"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.830520" elapsed="0.062806"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.144218" level="INFO">Current page contains text 'All Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:16:57.893754" elapsed="0.250985"/>
+</kw>
+<arg>All Products</arg>
+<status status="PASS" start="2025-11-02T15:16:57.829660" elapsed="0.315470"/>
+</kw>
+<doc>Navigue vers la page produits</doc>
+<status status="PASS" start="2025-11-02T15:16:52.353379" elapsed="5.791973"/>
+</kw>
+<kw name="Search Product" owner="product_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.159091" elapsed="0.062104"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.222097" level="INFO">Typing text 'Blue Top' into text field 'css:#search_product'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.221550" elapsed="0.301282"/>
+</kw>
+<arg>${SEARCH_FIELD}</arg>
+<arg>${product_name}</arg>
+<status status="PASS" start="2025-11-02T15:16:58.148905" elapsed="0.374168"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.524393" elapsed="0.066542"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.591340" elapsed="0.052055"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:16:58.644310" level="INFO">Clicking element 'css:#submit_search'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:16:58.643769" elapsed="1.810214"/>
+</kw>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:16:58.523460" elapsed="1.931174"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:00.476684" elapsed="2.137850"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.645527" level="INFO">Current page contains text 'Searched Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.615585" elapsed="0.030660"/>
+</kw>
+<arg>Searched Products</arg>
+<status status="PASS" start="2025-11-02T15:17:00.455748" elapsed="2.191696"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Recherche un produit par nom</doc>
+<status status="PASS" start="2025-11-02T15:16:58.146159" elapsed="4.501796"/>
+</kw>
+<kw name="Verify Product Search Results" owner="product_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.744767" level="INFO">Current page contains text 'Blue Top'.</msg>
+<arg>${expected_product}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.657013" elapsed="0.087989"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:02.778920" level="INFO">${product_count} = 1</msg>
+<var>${product_count}</var>
+<arg>${PRODUCT_CARD}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.745449" elapsed="0.033583"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${product_count} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.779452" elapsed="0.006399"/>
+</kw>
+<arg>${PRODUCT_1}</arg>
+<doc>Vérifie que le produit recherché est affiché</doc>
+<status status="PASS" start="2025-11-02T15:17:02.648626" elapsed="0.137887"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.857498" elapsed="0.000412"/>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="PASS" start="2025-11-02T15:17:02.854677" elapsed="0.003827"/>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.861140" elapsed="4.714681"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:17:02.858911" elapsed="4.717401"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-11-02T15:17:02.826170" elapsed="4.750333"/>
+</kw>
+<doc>Recherche d'un produit existant</doc>
+<tag>search</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2025-11-02T15:16:38.888881" elapsed="28.687827"/>
+</test>
+<test id="s1-s1-s1-t2" name="Search Non Existing Product" line="16">
+<kw name="Open Browser To Home Page" owner="common_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:07.583323" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-02T15:17:07.582090" elapsed="3.352713"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-02T15:17:10.935288" elapsed="9.759986"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.695859" elapsed="0.013133"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${HEADER_LOGO}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.709483" elapsed="0.032448"/>
+</kw>
+<doc>Ouvre le navigateur sur la page d'accueil</doc>
+<status status="PASS" start="2025-11-02T15:17:07.580908" elapsed="13.161294"/>
+</kw>
+<kw name="Go To Products Page" owner="product_keywords">
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.743975" elapsed="0.101103"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.845526" elapsed="0.144991"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:20.991552" level="INFO">Clicking element 'css:[href='/products']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:20.990969" elapsed="5.252519"/>
+</kw>
+<arg>${PRODUCTS_MENU}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:20.743292" elapsed="5.502728"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.256804" elapsed="0.090127"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:26.439366" level="INFO">Current page contains text 'All Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.352588" elapsed="0.087037"/>
+</kw>
+<arg>All Products</arg>
+<status status="PASS" start="2025-11-02T15:17:26.253832" elapsed="0.185979"/>
+</kw>
+<doc>Navigue vers la page produits</doc>
+<status status="PASS" start="2025-11-02T15:17:20.742636" elapsed="5.697331"/>
+</kw>
+<kw name="Search Product" owner="product_keywords">
+<kw name="Wait And Input Text" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.442271" elapsed="0.046620"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:26.489924" level="INFO">Typing text 'NonExistingProduct123' into text field 'css:#search_product'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.489290" elapsed="0.461304"/>
+</kw>
+<arg>${SEARCH_FIELD}</arg>
+<arg>${product_name}</arg>
+<status status="PASS" start="2025-11-02T15:17:26.441321" elapsed="0.509547"/>
+</kw>
+<kw name="Wait And Click" owner="common_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-02T15:17:26.952314" elapsed="0.083781"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.036526" elapsed="0.040938"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:27.080218" level="INFO">Clicking element 'css:#submit_search'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-02T15:17:27.079266" elapsed="0.973275"/>
+</kw>
+<arg>${SEARCH_BUTTON}</arg>
+<doc>Attend que l'élément soit cliquable puis clique</doc>
+<status status="PASS" start="2025-11-02T15:17:26.951313" elapsed="1.101534"/>
+</kw>
+<kw name="Verify Page Contains" owner="common_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expected_text}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-02T15:17:28.054226" elapsed="0.048321"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:17:28.266616" level="INFO">Current page contains text 'Searched Products'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-02T15:17:28.102918" elapsed="0.163863"/>
+</kw>
+<arg>Searched Products</arg>
+<status status="PASS" start="2025-11-02T15:17:28.053197" elapsed="0.213782"/>
+</kw>
+<arg>NonExistingProduct123</arg>
+<doc>Recherche un produit par nom</doc>
+<status status="PASS" start="2025-11-02T15:17:26.440384" elapsed="1.826725"/>
+</kw>
+<kw name="Verify No Search Results" owner="product_keywords">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:18:54.075309" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD9EC10&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:18:58.172659" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE71940&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:02.235751" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE72190&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:06.311994" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEA8170&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:06.318664" level="FAIL">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</msg>
+<arg>${SEARCH_ERROR_MSG}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-11-02T15:17:28.268021" elapsed="98.222627">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</status>
+</kw>
+<doc>Vérifie qu'aucun résultat n'est trouvé</doc>
+<status status="FAIL" start="2025-11-02T15:17:28.267428" elapsed="98.224066">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))</status>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Take Screenshot On Failure" owner="common_keywords">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:19:10.575182" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B350&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:14.669652" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6BAC0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:18.750004" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B130&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:26.882540" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB49E0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:30.937517" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4050&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:35.036889" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4270&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:39.107797" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4490&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:39.108312" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.493685" elapsed="32.622123">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.493416" elapsed="32.622695">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<doc>Prend une capture en cas d'échec</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.493027" elapsed="32.623277">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<kw name="Close Browser Session" owner="common_keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<msg time="2025-11-02T15:19:43.177304" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB5480&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:47.269668" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB56A0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:51.352151" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB58C0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-02T15:19:39.116959" elapsed="16.344992"/>
+</kw>
+<doc>Ferme le navigateur</doc>
+<status status="PASS" start="2025-11-02T15:19:39.116583" elapsed="16.345752"/>
+</kw>
+<arg>Take Screenshot On Failure</arg>
+<arg>AND</arg>
+<arg>Close Browser Session</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-11-02T15:19:06.492507" elapsed="48.970292">MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</kw>
+<doc>Recherche d'un produit qui n'existe pas</doc>
+<tag>negative</tag>
+<tag>search</tag>
+<status status="FAIL" start="2025-11-02T15:17:07.578639" elapsed="167.884824">ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))
+
+Also teardown failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B790&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</status>
+</test>
+<status status="FAIL" start="2025-11-02T15:16:38.537261" elapsed="196.933085"/>
+</suite>
+<status status="FAIL" start="2025-11-02T15:16:38.534723" elapsed="196.940938"/>
+</suite>
+<status status="FAIL" start="2025-11-02T15:16:38.515012" elapsed="196.963509"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">negative</stat>
+<stat pass="1" fail="1" skip="0">search</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="1" skip="0">Tests</stat>
+<stat name="Products" id="s1-s1" pass="1" fail="1" skip="0">Tests.Products</stat>
+<stat name="Search Tests" id="s1-s1-s1" pass="1" fail="1" skip="0">Tests.Products.Search Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-02T15:18:54.075309" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD9EC10&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:18:58.172659" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE71940&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:02.235751" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DE72190&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:06.311994" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEA8170&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:10.575182" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B350&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:14.669652" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6BAC0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:18.750004" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DD6B130&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:26.882540" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB49E0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:30.937517" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4050&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:35.036889" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4270&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703/screenshot</msg>
+<msg time="2025-11-02T15:19:39.107797" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=49972): Max retries exceeded with url: /session/cd973b1bd5d53127fd34a90b67bff703/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB4490&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))</msg>
+<msg time="2025-11-02T15:19:43.177304" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB5480&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:47.269668" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB56A0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+<msg time="2025-11-02T15:19:51.352151" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D81DEB58C0&gt;: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/cd973b1bd5d53127fd34a90b67bff703</msg>
+</errors>
+</robot>

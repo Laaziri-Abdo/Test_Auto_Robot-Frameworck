@@ -1,0 +1,38 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Authentication                                                          
+==============================================================================
+Tests.Authentication.Login Tests                                              
+==============================================================================
+Login With Valid Credentials :: Test de connexion avec des identif... | PASS |
+------------------------------------------------------------------------------
+Logout After Login :: Test de déconnexion après connexion             | PASS |
+------------------------------------------------------------------------------
+Login With Invalid Email :: Test de connexion avec email invalide       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\authentication\login_tests.robot:24
+    T:  Login With Invalid Email    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\tests\authentication\login_tests.robot:29
+      Verify Login Failure    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\resources\keywords\authentication_keywords.robot:27
+      Wait Until Page Contains Element    ${LOGIN_ERROR_MSG}
+      |  ${LOGIN_ERROR_MSG} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${LOGIN_ERROR_MSG}' not found. Did you mean:
+    ${LOGIN_ERROR_MSG_TEXT}
+------------------------------------------------------------------------------
+Tests.Authentication.Login Tests                                      | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Tests.Authentication                                                  | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Output:  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\parallel_results\pabot_results\0\output.xml

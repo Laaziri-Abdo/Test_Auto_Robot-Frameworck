@@ -1,0 +1,21 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Authentication                                                          
+==============================================================================
+Tests.Authentication.Registration Tests                                       
+==============================================================================
+Register New User :: Test d'inscription d'un nouvel utilisateur       | PASS |
+------------------------------------------------------------------------------
+Register With Existing Email :: Test d'inscription avec email exis... | PASS |
+------------------------------------------------------------------------------
+Tests.Authentication.Registration Tests                               | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests.Authentication                                                  | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\dell\Desktop\test qa\RobotFramwork\TestVf\parallel_results\pabot_results\1\output.xml
